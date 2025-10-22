@@ -6,7 +6,7 @@ let teamEmail = "";
 let currentStage = 0;
 let questions = [];
 let retryCount = 0;
-const hintThreshold = 10;
+const hintThreshold = 5;
 
 // Meme arrays
 const correctMemes = [
