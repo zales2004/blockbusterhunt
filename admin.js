@@ -1,4 +1,4 @@
-import { db } from "./firebase-config.js";
+import { db } from "./Firebase.js";
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const ADMIN_PASS = "blockbuster2025"; // Change before hosting
