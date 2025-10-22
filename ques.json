@@ -1,56 +1,55 @@
-[
-  {
-    "stage": 1,
-    "question": "Which actor is known as Lalettan in Malayalam cinema?",
-    "answer": "Mohanlal",
-    "hint": "He is a legendary actor in Mollywood."
+{
+  "validation": {
+    "caseInsensitive": true
   },
-  {
-    "stage": 2,
-    "question": "Who directed the movie Inception?",
-    "answer": "Christopher Nolan",
-    "hint": "He also directed Interstellar and The Dark Knight."
-  },
-  {
-    "stage": 3,
-    "question": "What is the name of the blue gemstone in Titanic?",
-    "answer": "Heart of the Ocean",
-    "hint": "It was given to Rose by her fiancé."
-  },
-  {
-    "stage": 4,
-    "question": "Which movie features the song 'Why This Kolaveri Di'?",
-    "answer": "3",
-    "hint": "It’s a Tamil movie directed by Aishwarya R. Dhanush."
-  },
-  {
-    "stage": 5,
-    "question": "Which superhero is known as the Man of Steel?",
-    "answer": "Superman",
-    "hint": "His emblem is a red and yellow 'S'."
-  },
-  {
-    "stage": 6,
-    "question": "Who played Jack Sparrow in Pirates of the Caribbean?",
-    "answer": "Johnny Depp",
-    "hint": "He also starred in Edward Scissorhands."
-  },
-  {
-    "stage": 7,
-    "question": "Which movie won the Best Picture Oscar in 2020?",
-    "answer": "Parasite",
-    "hint": "It’s a Korean dark comedy thriller."
-  },
-  {
-    "stage": 8,
-    "question": "Which film features the quote 'May the Force be with you'?",
-    "answer": "Star Wars",
-    "hint": "A legendary space saga franchise."
-  },
-  {
-    "stage": 9,
-    "question": "Which actor is known for the 'Iron Man' role in Marvel movies?",
-    "answer": "Robert Downey Jr",
-    "hint": "He is also known for Sherlock Holmes (2009)."
-  }
-]
+  "questions": [
+    {
+      "stage": 1,
+      "question": "Rain taps gently against the window as Vincent Gomez adjusts his cufflinks, eyes glinting through the haze of smoke. He leans back, studying you carefully.\n\n“You’ve been chosen for an extraordinary mission,” he says smoothly, “to find the lost gem, Nāgamaṇikyam. It brings fortune to those who uncover it… and ruin to those who don’t respect it.”\n\nHe slides a worn photograph across the table — a man in a sharp black suit standing beside a silver Aston Martin.\n\n“Once, even a British secret agent hunted this gem before it vanished,” Gomez murmurs. “The world knows him by his number, not his name. Always suited, calm under fire, and famous for how he liked his martini — stirred, not shaken. He says his second name first.”\n\nGomez leans closer, a faint smile curling his lips.\n\n“Find his number. Enter it below to continue.”",
+      "answer": "007",
+      "hint": "Bond"
+    },
+    {
+      "stage": 2,
+      "question": "Vincent Gomez’s voice comes through your phone:\n\n“Well done. To continue the Nāgamaṇikyam hunt, meet a famous Kerala CID who lives in the Skyline Apartments in Kochi. He knows the next step.”\n\nHe adds a hint:\n\n“Look for the apartment with a red car outside. In the past, he trained and solved cases in Scotland — sharp, methodical, and always prepared.”\n\nAt the entrance, a security guard stops you and asks:\n\n“Which room are you here to meet?”\n\nPrompt to player:\n“Enter the room number of this famous Kerala CID to continue the hunt.”",
+      "answer": "12 B",
+      "hint": "Pet Arjun"
+    },
+    {
+      "stage": 3,
+      "question": "The air in CID Moosa’s flat hangs heavy — smoke curls through the half-light, and photos of suspects freeze moments in time.\n\n“This hunt for the Nāgamaṇikyam has uncovered more than treasure,” Moosa murmurs. “Smugglers, rich men, even holy men — all drawn to the same serpent.”\n\nHe slides forward a scorched photograph.\n\n“Once, a man came to me. He said, ‘I’m from the underworld.’ Wore a pink coat, came from Bangkok, and spoke in sharp Mattancheri slang.”\n\nMoosa lowers his voice.\n\n“His roots tie to Damodaran Unni — his father. Years ago, he fought with the local tug-of-war team from High Range. Pride bruised, but never broken.”\n\nHe leans back, smirking.\n\n“If he’s back… know his name before he knows yours.”\n\n🎯 Player Directive:\n“Study the photograph. Recognise the man behind the smoke. Type his name to continue the hunt.”",
+      "answer": "Dude",
+      "hint": "Goat"
+    },
+    {
+      "stage": 4,
+      "question": "The dim light flickers as CID Moosa slides a worn envelope across the desk.\n\n“Your hunt moves to a place where even predators pause,” he murmurs. “A refuge where hunters rest, but no blood is ever spilled inside. Gold rooms, whispered secrets… and the occasional ghost — the one who claimed seven lives with nothing but a pencil.”\n\nHe leans closer, voice low:\n\n“All who chase the Nāgamaṇikyam drift here. Every transaction, every word — paid in gold coins only. The rules are sacred; break them and the sanctuary will devour you.”\n\nMoosa taps the envelope with a gloved finger.\n\n“Observe. Speak only when necessary. Your next clue awaits where even danger bows to protocol.”\n\nRain taps the window like a ticking clock.\n\n🎯 Player Directive:\n“Recognize the sanctuary where hunters pause. Enter the hotel name to continue your quest.”",
+      "answer": "Continental",
+      "hint": "Asia, Europe, North America"
+    },
+    {
+      "stage": 5,
+      "question": "The taxi skids to a halt, tires hissing on wet asphalt. You step out and the Continental Hotel looms before you — a fortress of whispers, gold, and subtle menace.\n\nBefore you can register your presence, an old man appears from the shadows, handing you a small leather bag.\n\nCuriosity pries your fingers open the clasp. Inside: a single gold coin and a phone.\n\nIt vibrates immediately. Vincent Gomez’s voice slices through the air:\n\n“The mission accelerates. Competitors have arrived. Every second counts. Use this wisely.”\n\nYou check in with the gold coin, sliding it into the elevator slot. The doors hum closed.\n\nInside, the cabin stops, and a man steps out from the corner, his posture casual, but eyes alert.\n\n“You know,” he begins, voice smooth as velvet, “in this hotel… everyone is extraordinary.”\n\nYou nod, intrigued, and ask:\n\n“And what do you do?”\n\nA sly smile curls his lips.\n\n“Biscuit business,” he replies.\n\n“Wholesale or retail?”\n\n“Both,” he says, leaning slightly closer, the smile widening, a glint of hidden mastery behind ordinary words.\n\nThe elevator dings again, doors sliding shut. The air hangs thick — the hum of gold coins, secret deals, and unspoken rivalries weaving around you.\n\n🎯 Player Directive:\n“Recognize the extraordinary character you just met. Enter his name to continue the hunt.”",
+      "answer": "Sagar Alias Jacky",
+      "hint": "Gold smuggler"
+    },
+    {
+      "stage": 6,
+      "question": "From Vincent Gomez’s secret sources, you learn the Nāgamaṇikyam lies deep in an inner village of Kerala. The next morning, your journey begins. Halfway through, your vehicle halts — a chaotic blockade. Fists, shouts, and dust cloud the road.\n\nPerched atop a red Mercedes, a man in cooling glasses observes the brawl with unnerving calm. His voice cuts through the din in a sharp Trivandrum slang.\n\nA local whispers: “He’s a buffalo businessman from Karnataka… sees only with his right eye, and he’s chasing the same gem as you.”\n\nHe smirks as your eyes meet, a predator sizing up another.\n\n🎯 Player Directive:\n“Can you identify this mysterious character? Enter his name to continue the hunt.”",
+      "answer": "Bellary Raja",
+      "hint": "Karnataka businessman"
+    },
+    {
+      "stage": 7,
+      "question": "In the quiet village of Chekk, your search for Nāgamaṇikyam winds through narrow lanes, tea stalls, and rustling coconut groves. Every shadow feels alive, every whisper a hidden clue.\n\nVillagers murmur about a petty thief with a good heart, accused of stealing the temple’s sacred idol of the goddess. But nothing he takes ever leaves the village — a strange code of honor.\n\nYou overhear: “He escaped police custody… and vowed to catch the real criminal.”\n\nThe tale resonates with you — daring escapes, secret kindness, righteous resolve… it mirrors one of your old favorite Malayalam films.\n\n🎯 Player Directive:\n“Name the Malayalam movie.”",
+      "answer": "Meesha Madhavan",
+      "hint": "Moustache"
+    },
+    {
+      "stage": 8,
+      "question": "After days of relentless pursuit, and with the clever guidance of the local thief, you finally trace the Nāgamaṇikyam to a secluded village, shrouded in mist and ancient whispers.\n\nFrom your investigation, you receive a crucial clue: the village is cursed for salsa bottles — no matter the trick, they cannot cross the boundary. They shatter or vanish the moment they approach. The air brims with tension, every step heavy with unseen eyes observing your moves.\n\nShadows twist unnaturally, and the faint tinkling of imagined glass echoes in your ears — a warning, or perhaps a test of resolve.\n\n🎯 Player Directive:\n“Using the clues, identify the village and enter its name to proceed.”",
+      "answer": "Desham",
+      "hint": "Kurikkanmola is the neighbouring village"
+    }
+  ]
+}
