@@ -1,0 +1,56 @@
+[
+  {
+    "stage": 1,
+    "question": "Which actor is known as Lalettan in Malayalam cinema?",
+    "answer": "Mohanlal",
+    "hint": "He is a legendary actor in Mollywood."
+  },
+  {
+    "stage": 2,
+    "question": "Who directed the movie Inception?",
+    "answer": "Christopher Nolan",
+    "hint": "He also directed Interstellar and The Dark Knight."
+  },
+  {
+    "stage": 3,
+    "question": "What is the name of the blue gemstone in Titanic?",
+    "answer": "Heart of the Ocean",
+    "hint": "It was given to Rose by her fiancé."
+  },
+  {
+    "stage": 4,
+    "question": "Which movie features the song 'Why This Kolaveri Di'?",
+    "answer": "3",
+    "hint": "It’s a Tamil movie directed by Aishwarya R. Dhanush."
+  },
+  {
+    "stage": 5,
+    "question": "Which superhero is known as the Man of Steel?",
+    "answer": "Superman",
+    "hint": "His emblem is a red and yellow 'S'."
+  },
+  {
+    "stage": 6,
+    "question": "Who played Jack Sparrow in Pirates of the Caribbean?",
+    "answer": "Johnny Depp",
+    "hint": "He also starred in Edward Scissorhands."
+  },
+  {
+    "stage": 7,
+    "question": "Which movie won the Best Picture Oscar in 2020?",
+    "answer": "Parasite",
+    "hint": "It’s a Korean dark comedy thriller."
+  },
+  {
+    "stage": 8,
+    "question": "Which film features the quote 'May the Force be with you'?",
+    "answer": "Star Wars",
+    "hint": "A legendary space saga franchise."
+  },
+  {
+    "stage": 9,
+    "question": "Which actor is known for the 'Iron Man' role in Marvel movies?",
+    "answer": "Robert Downey Jr",
+    "hint": "He is also known for Sherlock Holmes (2009)."
+  }
+]

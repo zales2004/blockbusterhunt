@@ -1,0 +1,89 @@
+/* Global font and layout */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-image: url('assets/bg.png'); /* Ensure image name matches your file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* smooth scrolling background */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Smooth transitions for UI elements */
+button, input {
+  transition: all 0.3s ease;
+}
+
+/* Custom placeholder color for dark theme */
+::placeholder {
+  color: #bfbfbf;
+  opacity: 0.8;
+}
+
+/* Quiz container adjustments */
+.quiz-container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.75);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 0, 0.15);
+  text-align: center;
+}
+
+/* Meme section styling */
+.meme-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-container img {
+  max-width: 100%;
+  border-radius: 16px;
+  border: 2px solid #facc15; /* Tailwind’s yellow-400 */
+  box-shadow: 0 4px 20px rgba(255, 255, 0, 0.25);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.meme-container img:hover {
+  transform: scale(1.03);
+}
+
+/* Fade-in animation for cinematic effect */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .quiz-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 16px;
+  }
+
+  input, button {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
