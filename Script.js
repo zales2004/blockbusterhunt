@@ -12,7 +12,13 @@ const hintThreshold = 5;
 // Meme arrays
 const correctMemes = [
   "./assets/correct1.jpg",
-  "./assets/correct2.jpg"
+  "./assets/correct2.jpg",
+  "./assets/correct3.jpg",
+  "./assets/correct4.jpg",
+  "./assets/correct5.jpg",
+  "./assets/correct6.jpg",
+  "./assets/correct7.jpg",
+  "./assets/correct8.jpg"
 ];
 
 const wrongMemes = [
@@ -21,7 +27,9 @@ const wrongMemes = [
   "./assets/wrong3.jpg",
   "./assets/wrong4.jpg",
   "./assets/wrong5.jpg",
-  "./assets/wrong6.jpg"
+  "./assets/wrong6.jpg",
+  "./assets/wrong7.jpg",
+  "./assets/wrong8.jpg"
 ];
 
 const memeContainer = document.getElementById("meme-container");
