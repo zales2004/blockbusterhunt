@@ -1,4 +1,4 @@
-import { db } from "./Firebase.js"; // Make sure file name matches exactly
+import { db } from "./Firebase.js";
 import { setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Game state
@@ -35,38 +35,37 @@ const wrongMemes = [
 const memeContainer = document.getElementById("meme-container");
 const memeImg = document.getElementById("meme-img");
 
-// Load questions from JSON
+// Load questions from JSON (rename to a less guessable file name for security)
 async function loadQuestions() {
   try {
-    const res = await fetch("./ques.json");
-    if (!res.ok) throw new Error("Failed to fetch ques.json");
-
+    const res = await fetch("./assets/qdata_47x91.json"); // renamed file
+    if (!res.ok) throw new Error("Failed to fetch question file");
     const data = await res.json();
-    questions = data.questions; // IMPORTANT: use the array inside "questions"
+    questions = data.questions;
     console.log("Questions loaded:", questions);
   } catch (err) {
     console.error("Error loading questions:", err);
-    alert("Failed to load questions. Check console for details.");
+    alert("Failed to load questions. Please contact the admin.");
   }
 }
 
-// Email validation
+// Gmail validation
 function isValidEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   return emailRegex.test(email);
 }
 
-// Start Hunt button
+// Start Hunt
 document.getElementById("startBtn").addEventListener("click", () => {
   teamName = document.getElementById("teamName").value.trim();
   teamEmail = document.getElementById("teamEmail").value.trim();
 
   if (!teamName || teamName.length < 3) {
-    return alert("Please enter a valid team name (at least 3 characters)");
+    return alert("Please enter a valid team name (at least 3 characters).");
   }
 
   if (!teamEmail || !isValidEmail(teamEmail)) {
-    return alert("Please enter a valid Gmail (example@gmail.com)");
+    return alert("Please enter a valid Gmail (example@gmail.com).");
   }
 
   document.getElementById("team-section").classList.add("hidden");
@@ -78,7 +77,7 @@ document.getElementById("startBtn").addEventListener("click", () => {
 
 // Show current stage
 function showStage() {
-  if (currentStage >= 8) { // only 8 stages
+  if (currentStage >= 8) {
     finishHunt();
     return;
   }
@@ -92,27 +91,24 @@ function showStage() {
   memeContainer.classList.add("hidden");
 }
 
-// ✅ Submit answer with multiple answer support
+// Submit answer
 document.getElementById("submitBtn").addEventListener("click", async () => {
   const answerInput = document.getElementById("answer");
   const userAnswer = answerInput.value.trim().toLowerCase();
 
   if (!userAnswer) return alert("Please enter an answer before submitting!");
 
-  // Get and normalize correct answers
+  // Handle multiple valid answers
   let correctAnswers = questions[currentStage].answer;
   if (typeof correctAnswers === "string") {
     correctAnswers = correctAnswers.split(",").map(a =>
-      a.trim().toLowerCase().replace(/[\s-]+/g, "") // remove spaces/hyphens
+      a.trim().toLowerCase().replace(/[\s-]+/g, "")
     );
   }
 
-  // Normalize user input too
   const normalizedUser = userAnswer.replace(/[\s-]+/g, "");
-
   memeContainer.classList.remove("hidden");
 
-  // Check match
   const isCorrect = correctAnswers.some(ans => ans === normalizedUser);
 
   if (isCorrect) {
@@ -120,12 +116,8 @@ document.getElementById("submitBtn").addEventListener("click", async () => {
     document.getElementById("feedback").innerText = "✅ Correct! Moving to next stage...";
     await saveProgress(teamName, teamEmail, questions[currentStage].stage);
     currentStage++;
-
-    if (currentStage >= 8) {
-      finishHunt();
-    } else {
-      setTimeout(showStage, 1500);
-    }
+    if (currentStage >= 8) finishHunt();
+    else setTimeout(showStage, 1500);
   } else {
     retryCount++;
     memeImg.src = wrongMemes[Math.floor(Math.random() * wrongMemes.length)];
@@ -139,10 +131,11 @@ document.getElementById("submitBtn").addEventListener("click", async () => {
   }
 });
 
-// Save progress to Firebase
+// Save progress — now uses unique key per team
 async function saveProgress(team, email, stage) {
   try {
-    await setDoc(doc(db, "teams", team), {
+    const safeEmail = email.replace(/[.@]/g, "_");
+    await setDoc(doc(db, "teams", `${team}_${safeEmail}`), {
       teamName: team,
       teamEmail: email,
       stageReached: stage,
