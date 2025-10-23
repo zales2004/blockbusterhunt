@@ -7,7 +7,7 @@ let teamEmail = "";
 let currentStage = 0;
 let questions = [];
 let retryCount = 0;
-const hintThreshold = 5;
+const hintThreshold = 8;
 
 // Meme arrays
 const correctMemes = [
@@ -92,21 +92,28 @@ function showStage() {
   memeContainer.classList.add("hidden");
 }
 
-// Submit answer
+// ✅ Submit answer with multiple answer support
 document.getElementById("submitBtn").addEventListener("click", async () => {
   const answerInput = document.getElementById("answer");
   const userAnswer = answerInput.value.trim().toLowerCase();
 
   if (!userAnswer) return alert("Please enter an answer before submitting!");
 
-  const correctAnswer = questions[currentStage].answer.toLowerCase();
-  const caseInsensitive = true; // from your JSON, you can read if needed
+  // Get and normalize correct answers
+  let correctAnswers = questions[currentStage].answer;
+  if (typeof correctAnswers === "string") {
+    correctAnswers = correctAnswers.split(",").map(a =>
+      a.trim().toLowerCase().replace(/[\s-]+/g, "") // remove spaces/hyphens
+    );
+  }
+
+  // Normalize user input too
+  const normalizedUser = userAnswer.replace(/[\s-]+/g, "");
 
   memeContainer.classList.remove("hidden");
 
-  const isCorrect = caseInsensitive
-    ? userAnswer === correctAnswer
-    : answerInput.value.trim() === questions[currentStage].answer;
+  // Check match
+  const isCorrect = correctAnswers.some(ans => ans === normalizedUser);
 
   if (isCorrect) {
     memeImg.src = correctMemes[Math.floor(Math.random() * correctMemes.length)];

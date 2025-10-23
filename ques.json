@@ -6,13 +6,13 @@
     {
       "stage": 1,
       "question": "Rain taps gently against the window as Vincent Gomez adjusts his cufflinks, eyes glinting through the haze of smoke. He leans back, studying you carefully.\n\n“You’ve been chosen for an extraordinary mission,” he says smoothly, “to find the lost gem, Nāgamaṇikyam. It brings fortune to those who uncover it… and ruin to those who don’t respect it.”\n\nHe slides a worn photograph across the table — a man in a sharp black suit standing beside a silver Aston Martin.\n\n“Once, even a British secret agent hunted this gem before it vanished,” Gomez murmurs. “The world knows him by his number, not his name. Always suited, calm under fire, and famous for how he liked his martini — stirred, not shaken. He says his second name first.”\n\nGomez leans closer, a faint smile curling his lips.\n\n“Find his number. Enter it below to continue.”",
-      "answer": "007",
+      "answer": ["007", "oo7", "double-o-seven", "double o seven"],
       "hint": "Bond"
     },
     {
       "stage": 2,
       "question": "Vincent Gomez’s voice comes through your phone:\n\n“Well done. To continue the Nāgamaṇikyam hunt, meet a famous Kerala CID who lives in the Skyline Apartments in Kochi. He knows the next step.”\n\nHe adds a hint:\n\n“Look for the apartment with a red car outside. In the past, he trained and solved cases in Scotland — sharp, methodical, and always prepared.”\n\nAt the entrance, a security guard stops you and asks:\n\n“Which room are you here to meet?”\n\nPrompt to player:\n“Enter the room number of this famous Kerala CID to continue the hunt.”",
-      "answer": "12 B",
+      "answer": ["12 B", "12b"],
       "hint": "Pet Arjun"
     },
     {
@@ -36,8 +36,8 @@
     {
       "stage": 6,
       "question": "From Vincent Gomez’s secret sources, you learn the Nāgamaṇikyam lies deep in an inner village of Kerala. The next morning, your journey begins. Halfway through, your vehicle halts — a chaotic blockade. Fists, shouts, and dust cloud the road.\n\nPerched atop a red Mercedes, a man in cooling glasses observes the brawl with unnerving calm. His voice cuts through the din in a sharp Trivandrum slang.\n\nA local whispers: “He’s a buffalo businessman from Karnataka… sees only with his right eye, and he’s chasing the same gem as you.”\n\nHe smirks as your eyes meet, a predator sizing up another.\n\n🎯 Player Directive:\n“Can you identify this mysterious character? Enter his name to continue the hunt.”",
-      "answer": "Bellary Raja",
-      "hint": "Karnataka businessman"
+      "answer": ["Bellary Raja", "bellari raja"],
+      "hint": "Character from a blockbuster Malayalam movie"
     },
     {
       "stage": 7,
