@@ -27,14 +27,36 @@
 
     <!-- Team Input Section -->
     <div id="team-section" class="space-y-4">
-      <input type="text" id="teamName" placeholder="Enter your team name"
-        class="w-full p-3 sm:p-4 border-2 border-yellow-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-800 text-white placeholder-gray-400 transition" required />
+      <input
+        type="text"
+        id="teamName"
+        placeholder="Enter your team name"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        class="w-full p-3 sm:p-4 border-2 border-yellow-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-800 text-white placeholder-gray-400 transition"
+        required
+      />
 
-      <input type="email" id="teamEmail" placeholder="Enter your Gmail"
-        class="w-full p-3 sm:p-4 border-2 border-yellow-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-800 text-white placeholder-gray-400 transition" required />
+      <input
+        type="email"
+        id="teamEmail"
+        placeholder="Enter your Gmail"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        class="w-full p-3 sm:p-4 border-2 border-yellow-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-800 text-white placeholder-gray-400 transition"
+        required
+      />
 
-      <button id="startBtn"
-        class="w-full bg-yellow-500 text-gray-900 font-bold p-3 sm:p-4 rounded-xl hover:bg-yellow-400 active:scale-95 transition-transform shadow-md">Start Hunt</button>
+      <button
+        id="startBtn"
+        class="w-full bg-yellow-500 text-gray-900 font-bold p-3 sm:p-4 rounded-xl hover:bg-yellow-400 active:scale-95 transition-transform shadow-md"
+      >
+        Start Hunt
+      </button>
     </div>
 
     <!-- Quiz Section -->
@@ -42,16 +64,33 @@
       <h2 id="stage" class="text-2xl sm:text-3xl font-semibold text-yellow-300"></h2>
       <p id="question" class="text-base sm:text-lg text-white leading-relaxed"></p>
 
-      <input type="text" id="answer" placeholder="Type your answer..."
-        class="w-full p-3 sm:p-4 border-2 border-yellow-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-800 text-white placeholder-gray-400 transition" />
+      <input
+        type="text"
+        id="answer"
+        placeholder="Type your answer..."
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        class="w-full p-3 sm:p-4 border-2 border-yellow-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-800 text-white placeholder-gray-400 transition"
+      />
 
-      <button id="submitBtn"
-        class="bg-yellow-500 text-gray-900 font-bold p-3 sm:p-4 rounded-xl w-full hover:bg-yellow-400 active:scale-95 transition-transform shadow-md">Submit Answer</button>
+      <button
+        id="submitBtn"
+        class="bg-yellow-500 text-gray-900 font-bold p-3 sm:p-4 rounded-xl w-full hover:bg-yellow-400 active:scale-95 transition-transform shadow-md"
+      >
+        Submit Answer
+      </button>
 
       <p id="feedback" class="mt-2 font-medium text-red-400 text-sm sm:text-base"></p>
 
       <div id="meme-container" class="meme-container hidden mt-4">
-        <img id="meme-img" src="" alt="Meme" class="rounded-xl shadow-lg mx-auto border-2 border-yellow-400 max-h-60 sm:max-h-80 object-contain" />
+        <img
+          id="meme-img"
+          src=""
+          alt="Meme"
+          class="rounded-xl shadow-lg mx-auto border-2 border-yellow-400 max-h-60 sm:max-h-80 object-contain"
+        />
       </div>
     </div>
 
