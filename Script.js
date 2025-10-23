@@ -38,7 +38,7 @@ const memeImg = document.getElementById("meme-img");
 // Load questions from JSON (rename to a less guessable file name for security)
 async function loadQuestions() {
   try {
-    const res = await fetch("./assets/qdata_47x91.json"); // renamed file
+    const res = await fetch("./ques.json"); // renamed file
     if (!res.ok) throw new Error("Failed to fetch question file");
     const data = await res.json();
     questions = data.questions;
